@@ -33,7 +33,7 @@ function ChangeContent(num){
     if (num == 1)
     {
         timelinename.innerHTML = "<strong>Jurassic Period</strong>";
-        year.innerHTML = "About 200 millions years ago";
+        year.innerHTML = "200 to 145 million years ago";
         text.innerHTML = "Did you know that dinosaurs once inhabitated here that we know now for having sub-zero temperatures? This is because Antarctica used to be much closer to the equator. This makes dinosaurs trive in a warmer environment.";
     }
     else if (num == 2)
@@ -41,7 +41,13 @@ function ChangeContent(num){
 
         timelinename.innerHTML = "<strong>Creataceous Period</strong>";
         year.innerHTML = "145 to 66 millions years ago";
-        text.innerHTML = "During this time period there were forests. This was the period before they went extinct";
+        text.innerHTML = "This is a period with a relatively warm climate, resulting in high sea levels that made shallow inland seas. Despite that, dinosaurs continued to thrive in that period. This was their last age before an asteroid hits the earth and ended their time on this planet"
+    }
+    else if (num == 3)
+    {
+        timelinename.innerHTML = "<strong>Antartica</strong>";
+        year.innerHTML = "66 million years ago to now";
+        text.innerHTML = "Cooler global temperatures due to the lack of CO2 caused the ice sheets to from on Antartica for years to made it to the place that we know today"
     }
 
     if(counter == 1)
