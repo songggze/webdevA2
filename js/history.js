@@ -65,12 +65,12 @@ function ChangeContent(num){
 
 // Next/Prev Btns
 function GoRight(){
-    if (counter == 1){
-        navsection.classList.add("displayleftbtn");
+    if (counter < maxcounter){
+        leftbutton.style.opacity = 1;
     }
     
     if(counter + 1 == maxcounter){
-        navsection.classList.remove("displayrightbtn");
+        rightbutton.style.opacity = 0;
     }
 
     if (counter < maxcounter)
@@ -88,12 +88,12 @@ function GoRight(){
 }
 
 function GoLeft(){
-    if (counter == maxcounter){
-        navsection.classList.add("displayrightbtn");
+    if (counter > 1){
+        rightbutton.style.opacity = 1;
     }
     
     if(counter - 1 == 1){
-        navsection.classList.remove("displayleftbtn");
+        leftbutton.style.opacity = 0;
     }
 
     if (counter > 1)

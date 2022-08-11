@@ -58,8 +58,8 @@ hr{
     background-color:gray;
     border-radius: 10px;
     animation: 0.5s linear;
-    height: 50vh;
-    width: 30%;
+    height: 200px;
+    width: 35%;
     margin-left:20%;
 }
 
@@ -104,17 +104,6 @@ hr{
     display:flex;
 }
 
-#historycontentleft{
-    flex-basis: 15%;
-    justify-content: center;
-    height: 50vh;
-}
-
-#historycontentright{
-    flex-basis: 15%;
-    justify-content: center;
-    height: 50vh;
-}
 
 #historypicture{
     height: 50vh;
@@ -154,6 +143,7 @@ hr{
     width: 20%;
     height: 20%;
     top:33%;
+    opacity: 0;
 }
 
 #nextbtn{
@@ -173,8 +163,8 @@ hr{
     animation: scaletab 0.1s ease-in forwards;
 }
 
-#backbtn:hover{
-    background-color: gray;
+#prevbtn:hover, #nextbtn:hover, #buttonimage:hover{
+    opacity: 0.5;
 }
 
 @keyframes scaletab{
@@ -194,6 +184,7 @@ hr{
     width: 10px;
     height: 10px;
     animation: fall 3s linear forwards infinite;
+    overflow:clip;
 }
   
   
@@ -218,21 +209,21 @@ hr{
 }
 
 
-/* @media screen and (max-width: 700px){
-    nav{
-        width: 100%;
-        height: auto;
-        position: relative;
+/* Breakpoints */
+@media screen and (max-width: 720px){
+    .tabcontainer{
+        width: 50%;
     }
 
-    nav a{
-        text-align: center;
-    }
-
-    div.content{
-        margin: 0px;
-    }
 }
- */
+
+@media screen and (max-width: 540px){
+    .tabcontainer{
+        width: 70%;
+    }
+
+}
+
+
 
   
